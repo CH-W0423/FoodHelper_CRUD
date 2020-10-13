@@ -1,0 +1,19 @@
+{
+  "name": "FoodHelper_CRUD",
+  "version": "1.0.0",
+  "description": "FoodHelper connects people with great local restaurants. ![Restaurant](./Restaurant screenshot_main page) ![Restaurant](./Restaurant screenshot_edit page)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {}
+}
