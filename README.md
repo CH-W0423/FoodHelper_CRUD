@@ -1,8 +1,6 @@
 # FoodHelper 你的熱門餐廳
 
 FoodHelper connects people with great local restaurants.
-![Restaurant](./Restaurant screenshot_main page)
-![Restaurant](./Restaurant screenshot_edit page)
 
 ## 產品功能
 
