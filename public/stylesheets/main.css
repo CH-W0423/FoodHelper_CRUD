@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Oswald:wght@500&family=Satisfy&display=swap");
+@import url("https://bootswatch.com/4/superhero/bootstrap.min.css");
 .search-bar,
 #data-panel .card,
 .restaurant-detail,
@@ -6,18 +6,19 @@
   font-family: "Noto Serif TC", serif;
 }
 a {
-  text-decoration: none !important;
+  text-decoration: none;
+  color: #f0c05a;
 }
 /*for main.handlebars*/
 header {
   overflow: hidden;
 }
 .navbar .navbar-brand {
-  color: #f4762d;
+  color: #f0c05a;
 }
 
 .navbar .navbar-brand:hover {
-  color: #ea7453;
+  color: #f0c05a;
 }
 nav a {
   font-family: "Oswald", sans-serif;
@@ -35,12 +36,11 @@ nav a {
 }
 
 .restaurant-show-title {
-  font-family: "Satisfy", cursive;
   position: relative;
   top: -200px;
-  color: white;
+  color: #f0c05a;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -58,25 +58,25 @@ footer {
   background-color: #f8f9fa;
 }
 .list-unstyled li a {
-  color: #ea7453;
+  color: #f0c05a;
 }
 .list-unstyled li a:hover {
-  color: #ea7453;
+  color: #f0c05a;
 }
 
 .search-bar .search-bar-outer {
   margin: 0 auto;
   max-width: 680px;
-  background-color: #eecec4;
+  background-color: #f0c05a;
   border-radius: 8px;
   padding: 20px 30px;
   border: 0;
-  margin-top: -55px;
+  margin-top: -155px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar .search-bar-inner h4 {
-  color: #e6491e;
+  color: #39444a;
 }
 
 .form-control::placeholder {
@@ -85,13 +85,13 @@ footer {
 }
 
 .btn-major {
-  background-color: #ea7453;
+  background-color: #39444a;
   color: white;
 }
 
 .form-control:focus {
   box-shadow: none;
-  border-color: #ea7453;
+  border-color: #f0c05a;
 }
 
 .card {
@@ -109,7 +109,7 @@ footer {
 }
 
 .restaurant-category {
-  color: #ea7453;
+  color: #f0c05a;
   font-size: 0.8rem;
 }
 

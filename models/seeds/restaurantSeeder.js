@@ -15,7 +15,7 @@ db.on('error', () => {
 db.once('open', () => {
   console.log('mongodb connected!')
   //新增json檔內的資料
-  restaurantList.results.forEach((restaurant)=>{
+  restaurantList.results.forEach((restaurant) => {
     Restaurant.create({
       name: restaurant.name,
       name_en: restaurant.name_en,
@@ -31,3 +31,4 @@ db.once('open', () => {
 
   console.log('done!')
 })
+
