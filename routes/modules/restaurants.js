@@ -80,7 +80,7 @@ router.delete('/:id', (req, res) => {
 })
 
 //搜尋功能
-router.get('/search', (req, res) => {
+router.get('/', (req, res) => {
   console.log(req.query)
   const keyword = req.query.keyword
   Restaurant.find()
