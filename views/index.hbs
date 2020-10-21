@@ -44,7 +44,7 @@
               <div class="crud-buttons align-self-end">
                 <a type="button" class="btn btn-warning" href="./restaurants/{{this._id}}/edit">edit</a>
                 <a type="button" class="btn btn-warning" href="./restaurants/{{this._id}}">details</a>
-                <form action="./restaurants/{{this._id}}/delete" method="POST" style="display: inline;">
+                <form action="./restaurants/{{this._id}}?_method=DELETE" method="POST" style="display: inline;">
                   <button type="submit" class="btn btn-warning">delete</button>
                 </form>
               </div>

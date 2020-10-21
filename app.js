@@ -2,6 +2,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
+// 載入 method-override
+const methodOverride = require('method-override') 
 const Restaurant = require('./models/restaurant')
 const app = express()
 const port = 3000
@@ -31,6 +33,10 @@ app.set('view engine', 'hbs')
 app.use(express.static('public'))
 //每筆請求都要透過body-parser前置處理
 app.use(bodyParser.urlencoded({ extended: true }))
+
+// 設定每一筆請求都會透過 methodOverride 進行前置處理
+app.use(methodOverride('_method'))
+
 // start and listen on the Express server
 app.listen(port, () => {
   console.log(`Express is listening on http://localhost:${port}`);
@@ -80,7 +86,7 @@ app.get('/restaurants/:id/edit', (req, res) => {
 })
 
 //資料從表單回傳後，更新資料庫
-app.post('/restaurants/:id/edit', (req, res) => {
+app.put('/restaurants/:id', (req, res) => {
   const id = req.params.id
   const name = req.body.name
   const nameEn = req.body.name_en
@@ -112,7 +118,7 @@ app.post('/restaurants/:id/edit', (req, res) => {
 
 
 //去資料庫刪除資料
-app.post('/restaurants/:id/delete', (req, res) => {
+app.delete('/restaurants/:id', (req, res) => {
   const id = req.params.id
   return Restaurant.findById(id)
     .then((restaurant) => restaurant.remove())
