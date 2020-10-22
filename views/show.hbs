@@ -41,10 +41,11 @@ justify-content-center align-items-center" id="wrapper">
 
   </div>
   <div class="buttons">
-    <a type="button" class="btn btn-warning mb-4" href="/restaurants/{{restaurant._id}}/edit">編輯</a>
-    <a href="/" class="btn btn-warning mb-4" type="button">返回</a>
-    <form action="/restaurants/{{restaurant._id}}?_method=DELETE method=" POST" style="display: inline;">
-      <button type="submit" class="btn btn-warning mb-4">刪除</button>
+    <a type="button" class="btn btn-secondary mb-4" href="/restaurants/{{restaurant._id}}/edit">編輯</a>
+    <a href="/" class="btn btn-secondary mb-4" type="button">返回</a>
+    <form action="/restaurants/{{restaurant._id}}?_method=DELETE" method="POST" style="display: inline;">
+      <button type="submit" class="btn btn-secondary mb-4" onclick="return confirm('您確定要刪除嗎?')">刪除</button>
     </form>
   </div>
+
 </div>

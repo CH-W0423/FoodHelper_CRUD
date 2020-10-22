@@ -3,7 +3,6 @@ const express = require('express')
 const router = express.Router()
 // 引用 Restaurant model
 const Restaurant = require('../../models/restaurant')
-
 // add new routes setting
 router.get('/new', (req, res) => {
   return res.render('new')
@@ -77,22 +76,5 @@ router.delete('/:id', (req, res) => {
     .then((restaurant) => restaurant.remove())
     .then(() => res.redirect('/'))
     .catch((error) => console.log(error))
-})
-
-//搜尋功能
-router.get('/', (req, res) => {
-  console.log(req.query)
-  const keyword = req.query.keyword
-  Restaurant.find()
-    .lean()
-    .then(restaurants => {
-      return restaurants.filter(restaurant =>
-        restaurant.name.toLowerCase().includes(keyword)
-        || restaurant.name_en.toLowerCase().includes(keyword)
-        || restaurant.category.toLowerCase().includes(keyword)
-      )
-    })
-    .then(restaurants => res.render('index', { restaurants, keyword }))
-    .catch(error => console.log(error))
 })
 module.exports = router

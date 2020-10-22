@@ -55,7 +55,7 @@ nav a {
 }
 
 footer {
-  background-color: #f8f9fa;
+  background-color: #39444a;
 }
 .list-unstyled li a {
   color: #f0c05a;
@@ -66,9 +66,9 @@ footer {
 
 .search-bar .search-bar-outer {
   margin: 0 auto;
-  max-width: 680px;
+  max-width: 700px;
   background-color: #f0c05a;
-  border-radius: 8px;
+  border-radius: 25px;
   padding: 20px 30px;
   border: 0;
   margin-top: -110px;
@@ -90,16 +90,16 @@ footer {
 }
 
 .form-control:focus {
-  box-shadow: none;
+  box-shadow: 10px;
   border-color: #f0c05a;
 }
 
 .card {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-  height: 180px;
+  height: 185px;
 }
 
 .card-title {
@@ -110,7 +110,7 @@ footer {
 
 .restaurant-category {
   color: #f0c05a;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -126,8 +126,8 @@ footer {
 }
 
 #wrapper {
-  min-height: 32vh;
+  min-height: 30vh;
 }
 .restaurant-detail {
-  font-size: 25px;
+  font-size: 20px;
 }

@@ -1,13 +1,13 @@
 # FoodHelper 你的熱門餐廳
 
 FoodHelper connects people with great local restaurants.
-![Restaurant](./Restaurant screenshot_index_page)
-![Restaurant](./Restaurant screenshot_edit_page)
+![](./restaurant_index_page.png)
+![](./restaurant_create_page.png)
 
 ## 產品功能
 
 - 使用者可以瀏覽每一間餐廳的詳細資訊
-- 提供使用者瀏覽和搜尋餐廳的功能
+- 使用者透過搜尋欄位搜尋餐廳
 - 使用者可以修改一間餐廳的資訊
 - 使用者可以新增一間餐廳的資訊
 - 用者可以刪除一間餐廳
