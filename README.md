@@ -25,7 +25,7 @@ FoodHelper connects people with great local restaurants.
 1. 在電腦開啟 terminal 輸入指令，Clone 專案下載專案資料夾中
 
 ```
-git clone https://github.com/CH-W0423/restaurant_CRUD_A7.git
+git clone https://github.com/CH-W0423/restaurant_CRUD.git
 ```
 
 2. 開啟終端機 (Terminal)，輸入指令進入此專案資料夾
