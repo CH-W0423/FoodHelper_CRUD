@@ -1,6 +1,6 @@
 # FoodHelper 你的熱門餐廳
 
-# FoodHelper connects people with great local restaurants.
+##### FoodHelper connects people with great local restaurants.
 ![](./restaurant_index_page.png)
 ![](./restaurant_create_page.png)
 
