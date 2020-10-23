@@ -1,6 +1,6 @@
 # FoodHelper 你的熱門餐廳
 
-FoodHelper connects people with great local restaurants.
+# FoodHelper connects people with great local restaurants.
 ![](./restaurant_index_page.png)
 ![](./restaurant_create_page.png)
 
@@ -31,7 +31,7 @@ git clone https://github.com/CH-W0423/restaurant_CRUD.git
 2. 開啟終端機 (Terminal)，輸入指令進入此專案資料夾
 
 ```
-cd restaurant_CRUD_A7
+cd restaurant_CRUD
 ```
 
 3. 專案資料夾中使用，安裝套件 npm
